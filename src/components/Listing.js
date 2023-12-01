@@ -77,26 +77,26 @@ const Listing = () => {
         </div>
         <div className="listing">
           <div className="header">
-            <div>Name</div>
-            <div>E-mail</div>
-            <div>Role</div>
-            <div>Actions</div>
+            <div className="ele">Name</div>
+            <div className="ele">E-mail</div>
+            <div className="ele">Role</div>
+            <div className="ele">Actions</div>
           </div>
 
           {Array.isArray(data) &&
             data?.length > 0 &&
             data?.map((item) => (
               <div className="each">
-                <div>
+                <div className="ele">
                   <input
                     type="checkbox"
                     onChange={(e) => handleSelect(e, item)}
                   />
                   {item?.name}
                 </div>
-                <div>{item?.email}</div>
-                <div>{item?.role}</div>
-                <div>
+                <div className="ele">{item?.email}</div>
+                <div className="ele">{item?.role}</div>
+                <div className="ele svg-container">
                   <div className="svg" onClick={()=>handleDelete(item)}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

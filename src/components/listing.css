@@ -48,7 +48,7 @@
    height: 72px;
    border-bottom: 1px solid black;
    /* border: 1px solid black; */
-
+ 
 
 
 } 
@@ -62,14 +62,16 @@
    
     text-align: start;
 }
-.each  div{
+.ele{
     padding: 8px;
     flex: 1;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    justify-content: center;
     text-align: start;
+} 
+.svg-container{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: flex-start;
 }
 .pagination{
     position: absolute;
