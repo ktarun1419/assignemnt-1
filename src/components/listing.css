@@ -1,0 +1,117 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    padding: 16px;
+    padding-bottom: 48px;
+    width: 100%;
+    border: 1px solid black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+
+}
+.search-box{
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    height: 52px;
+    padding: 8px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.listing{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+}
+.each , .header{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   gap: 8px;
+   height: 72px;
+   border-bottom: 1px solid black;
+   /* border: 1px solid black; */
+
+
+
+} 
+.header{
+    font-size: 20px;
+
+}
+.header div{
+    padding: 8px;
+    flex: 1;
+   
+    text-align: start;
+}
+.each  div{
+    padding: 8px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    text-align: start;
+}
+.pagination{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 48px;
+    background-color: white;
+}
+
+.pagination {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  .page-btn {
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 5px 10px;
+    margin: 0 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .page-btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .page-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .number-btn.active {
+    font-weight: bold;
+    background-color: #ddd;
+  }
+  svg{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
